@@ -1,4 +1,5 @@
 import { format, isPast } from "date-fns";
+import pt_BR from "date-fns/locale/pt-BR";
 import { CheckCircle, Lock } from "phosphor-react";
 
 interface LessonProps {
@@ -16,7 +17,7 @@ export const Lesson = (props: LessonProps) => {
   return (
     <a href={props.slug}>
       <span className="block mb-2 text-gray-300">
-        {format(formatedDate, "eeee' • 'dd' de 'LLLL' • 'HH'h'mm")}
+        {format(formatedDate, "eeee' • 'dd' de 'LLLL' • 'HH'h'mm", { locale: pt_BR })}
       </span>
 
       <div className="flex flex-col w-full justify-center border border-gray-500 p-4 rounded">
