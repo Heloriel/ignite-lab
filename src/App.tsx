@@ -1,7 +1,11 @@
+import { Layout } from "./components/Layout/Layout";
+import { LabPage } from "./pages/Lab";
+
 function App() {
   return (
-    <ul>
-    </ul>
+    <Layout>
+      <LabPage />
+    </Layout>
   )
 }
 
