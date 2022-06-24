@@ -2,10 +2,10 @@
 module.exports = {
   content: ['./src/**/*.tsx'],
   theme: {
-    fontFamily: {
-      'sans': ['Roboto', 'sans-serif'],
-    },
     extend: {
+      fontFamily: {
+        'sans': ['Roboto', 'sans-serif'],
+      },
       colors: {
         green: {
           300: '#00B37E',
