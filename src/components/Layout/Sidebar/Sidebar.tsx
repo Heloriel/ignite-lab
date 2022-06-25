@@ -32,21 +32,10 @@ export const Sidebar = () => {
 
   return (
     <div className="flex flex-col w-[348px] bg-gray-700 border-l border-gray-600 p-6">
-      <span className="font-bold text-2xl pb-6 mb-6 border-b border-gray-500 block">
-        Cronograma das Aulas
-      </span>
+      <span className="font-bold text-2xl pb-6 mb-6 border-b border-gray-500 block">Cronograma das Aulas</span>
       <div className="flex flex-col gap-8">
         {data?.lessons.map((lesson) => {
-          return (
-            <Lesson
-              key={lesson.id}
-              availableAt={lesson.availableAt}
-              description={lesson.description}
-              slug={lesson.slug}
-              lessonType={lesson.lessonType}
-              title={lesson.title}
-            />
-          );
+          return <Lesson key={lesson.id} availableAt={lesson.availableAt} description={lesson.description} slug={lesson.slug} lessonType={lesson.lessonType} title={lesson.title} />;
         })}
       </div>
     </div>
