@@ -13,6 +13,14 @@ export const Router = () => {
           </Layout>
         }
       />
+      <Route
+        path="/classroom/"
+        element={
+          <Layout>
+            <ClassRoomPage />
+          </Layout>
+        }
+      />
     </Routes>
   );
 };
