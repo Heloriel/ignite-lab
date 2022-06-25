@@ -1,6 +1,7 @@
 import { Layout } from "./components/Layout/Layout";
 import { Route, Routes } from "react-router-dom";
 import { ClassRoomPage } from "./pages/ClassRoom";
+import { Index } from "./pages/Index";
 
 export const Router = () => {
   return (
@@ -21,6 +22,7 @@ export const Router = () => {
           </Layout>
         }
       />
+      <Route path="/" element={<Index />} />
     </Routes>
   );
 };

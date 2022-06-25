@@ -2,7 +2,7 @@ import RocketSeatLogo from "../Logo/RocketseatLogo";
 
 export const Footer = () => {
   return (
-    <footer className="flex flex-row p-7 items-center border-t border-t-gray-500">
+    <footer className="flex flex-row p-7 w-full items-center border-t border-t-gray-500">
       <div>
         <RocketSeatLogo />
       </div>

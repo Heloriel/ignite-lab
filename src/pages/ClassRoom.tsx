@@ -1,5 +1,5 @@
 import { gql, useQuery } from "@apollo/client";
-import { DiscordLogo, FileArrowDown, Lightning, Image } from "phosphor-react";
+import { DiscordLogo, FileArrowDown, Lightning, Image, CaretRight } from "phosphor-react";
 import { useNavigate, useParams } from "react-router";
 import { Button } from "../components/Button/Button";
 import { Card } from "../components/Cards/Cards";
@@ -43,8 +43,15 @@ export const ClassRoomPage = () => {
     },
   });
 
-  if (!data || data.lesson == null) {
-    return;
+  if (!data || !data.lesson) {
+    return (
+      <div className="flex-1 flex items-center justify-center h-screen flex-col">
+        <strong className="text-3xl">Selecione uma aula para começar.</strong>
+        <p className="mt-2">
+          <CaretRight size={32} />
+        </p>
+      </div>
+    );
   }
 
   return (
@@ -58,7 +65,7 @@ export const ClassRoomPage = () => {
             <Teacher data={data.lesson.teacher} avatarSize={"md"} />
           </div>
         </div>
-        <div className="flex flex-col align-top">
+        <div className="flex flex-col align-top gap-4">
           <Button url="https://discord.com/invite/rocketseat" variant="solid-primary" icon={<DiscordLogo size={24} />}>
             COMUNIDADE NO DISCORD
           </Button>
