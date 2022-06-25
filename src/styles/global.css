@@ -33,3 +33,7 @@ body {
 .mockup {
   background: url("/src/assets/images/Group 7735.png") no-repeat bottom;
 }
+
+.activeLesson {
+  @apply bg-green-500 text-white hover:border-none border-none;
+}
