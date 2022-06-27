@@ -2,8 +2,8 @@
 
 Desenvolvimento da aplicação proposta no Ignite Lab da Rocketseat
 
-Técnologias utilizadas:
-<div align="center">
+## Técnologias utilizadas:
+<div>
    <table>
      <tr>
        <td align="center">
