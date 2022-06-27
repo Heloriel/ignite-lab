@@ -14,3 +14,7 @@ Desenvolvimento da aplicação proposta no Ignite Lab da Rocketseat
     </tr>
    </table>
   </div>
+
+
+Link hospedado:
+https://ignite-lab-kappa.vercel.app/classroom/abertura-ignite-lab
